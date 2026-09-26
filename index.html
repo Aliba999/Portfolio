@@ -217,7 +217,7 @@
 
         /* Projects Section */
         .projects {
-            padding: 120px 0;
+            padding: 100px 0;
         }
 
         .projects-grid {
@@ -226,7 +226,6 @@
             gap: 30px;
         }
 
-        /* Card 3D Tilt Wrapper */
         .project-card {
             background: var(--card-bg);
             border: 1px solid var(--card-border);
@@ -244,7 +243,6 @@
             border-color: rgba(99, 102, 241, 0.4);
         }
 
-        /* Browser Mockup Header */
         .mockup-header {
             background: rgba(0, 0, 0, 0.4);
             padding: 10px 15px;
@@ -272,7 +270,6 @@
             opacity: 0.7;
         }
 
-        /* Card Preview Box */
         .card-preview {
             height: 200px;
             width: 100%;
@@ -292,26 +289,11 @@
             background: linear-gradient(to top, var(--card-bg) 0%, transparent 100%);
         }
 
-        /* Visual Graphic Placeholders for Projects */
-        .preview-studyit {
-            background: linear-gradient(135deg, #1e1b4b, #311042);
-        }
-
-        .preview-crypto {
-            background: linear-gradient(135deg, #0b0e14, #1e293b);
-        }
-
-        .preview-algo {
-            background: linear-gradient(135deg, #0f172a, #0284c7);
-        }
-
-        .preview-taskflow {
-            background: linear-gradient(135deg, #18181b, #27272a);
-        }
-
-        .preview-news {
-            background: linear-gradient(135deg, #111827, #1f2937);
-        }
+        .preview-studyit { background: linear-gradient(135deg, #1e1b4b, #311042); }
+        .preview-crypto { background: linear-gradient(135deg, #0b0e14, #1e293b); }
+        .preview-algo { background: linear-gradient(135deg, #0f172a, #0284c7); }
+        .preview-taskflow { background: linear-gradient(135deg, #18181b, #27272a); }
+        .preview-news { background: linear-gradient(135deg, #111827, #1f2937); }
 
         .preview-icon {
             font-size: 3.5rem;
@@ -325,7 +307,6 @@
             color: var(--accent);
         }
 
-        /* Card Content */
         .card-body {
             padding: 25px;
             display: flex;
@@ -372,6 +353,71 @@
             padding: 8px 16px;
             font-size: 0.85rem;
             border-radius: 6px;
+        }
+
+        /* Skills Section */
+        .skills {
+            padding: 80px 0 120px 0;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .skill-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 30px 25px;
+            backdrop-filter: blur(12px);
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(99, 102, 241, 0.4);
+        }
+
+        .skill-icon-wrapper {
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            background: rgba(99, 102, 241, 0.12);
+            border: 1px solid rgba(99, 102, 241, 0.25);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: #a5b4fc;
+            margin-bottom: 20px;
+        }
+
+        .skill-card h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .skill-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .skill-list li {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .skill-list li i {
+            color: var(--accent);
+            font-size: 0.8rem;
         }
 
         /* Modal for Figma */
@@ -482,9 +528,7 @@
             </div>
             <h1>Алибек Салим</h1>
             <div class="subtitle" id="typewriter"></div>
-            <p>Проектирую и разрабатываю современные веб-интерфейсы, аналитические дашборды и визуализаторы алгоритмов. Объединяю чистый код и продуманный UI/UX дизайн.
-                I am an aspiring web developer. I am ready to take on any job; right now, I am looking to gain more practical experience across various areas of IT. I look forward to hearing from you.
-            </p>
+            <p>Проектирую и разрабатываю современные веб-интерфейсы, аналитические дашборды и визуализаторы алгоритмов. Объединяю чистый код и продуманный UI/UX дизайн.</p>
             <div class="btn-group">
                 <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> Смотреть работы</a>
                 <a href="https://github.com/aliba999" target="_blank" class="btn btn-secondary"><i class="fa-brands fa-github"></i> GitHub Профиль</a>
@@ -631,7 +675,7 @@
                     <div class="card-body">
                         <div>
                             <h3>News135.kz Portal</h3>
-                            <p>Адаптивный новостной портал с функционалом фильтрации публикаций, поисковой строкой и структурированной версткой.</p>
+                            <p>Адаптивный новостной портал с функционалом фильтрации публикаций, поисковой строкой и структурированной версткой[cite: 1].</p>
                             <div class="tags">
                                 <span class="tag">HTML5/CSS3</span>
                                 <span class="tag">JavaScript</span>
@@ -644,6 +688,77 @@
                             <a href="https://github.com/aliba999/news135.kz" target="_blank" class="btn btn-secondary btn-sm"><i class="fa-brands fa-github"></i> Code</a>
                         </div>
                     </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Навыки и Стеки</h2>
+            </div>
+            
+            <div class="skills-grid">
+                
+                <!-- Frontend -->
+                <div class="skill-card">
+                    <div class="skill-icon-wrapper">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3>Frontend Dev</h3>
+                    <ul class="skill-list">
+                        <li><i class="fa-solid fa-check"></i> HTML5 / Modern CSS3</li>
+                        <li><i class="fa-solid fa-check"></i> JavaScript (ES6+, Async/Await)</li>
+                        <li><i class="fa-solid fa-check"></i> HTML5 Canvas Animation</li>
+                        <li><i class="fa-solid fa-check"></i> Chart.js & Data Viz</li>
+                        <li><i class="fa-solid fa-check"></i> DOM & LocalStorage API</li>
+                    </ul>
+                </div>
+
+                <!-- Computer Science & Languages -->
+                <div class="skill-card">
+                    <div class="skill-icon-wrapper">
+                        <i class="fa-solid fa-terminal"></i>
+                    </div>
+                    <h3>Languages & CS</h3>
+                    <ul class="skill-list">
+                        <li><i class="fa-solid fa-check"></i> Java (Syntax & OOP)</li>
+                        <li><i class="fa-solid fa-check"></i> Python (Basic Data Analysis)</li>
+                        <li><i class="fa-solid fa-check"></i> Graph Algorithms (BFS, DFS)</li>
+                        <li><i class="fa-solid fa-check"></i> Data Structures</li>
+                        <li><i class="fa-solid fa-check"></i> Discrete Mathematics</li>
+                    </ul>
+                </div>
+
+                <!-- UI/UX & Web Design -->
+                <div class="skill-card">
+                    <div class="skill-icon-wrapper">
+                        <i class="fa-solid fa-palette"></i>
+                    </div>
+                    <h3>UI/UX & Design</h3>
+                    <ul class="skill-list">
+                        <li><i class="fa-solid fa-check"></i> Figma Prototyping & Layouts</li>
+                        <li><i class="fa-solid fa-check"></i> Mobile First & Responsive Design</li>
+                        <li><i class="fa-solid fa-check"></i> User Flow & Wireframing</li>
+                        <li><i class="fa-solid fa-check"></i> Tilda & Zero Block</li>
+                    </ul>
+                </div>
+
+                <!-- Tools & Ecosystem -->
+                <div class="skill-card">
+                    <div class="skill-icon-wrapper">
+                        <i class="fa-solid fa-gears"></i>
+                    </div>
+                    <h3>Tools & Workflow</h3>
+                    <ul class="skill-list">
+                        <li><i class="fa-solid fa-check"></i> Git & GitHub Pages</li>
+                        <li><i class="fa-solid fa-check"></i> REST API Integration</li>
+                        <li><i class="fa-solid fa-check"></i> Google Ads & Analytics</li>
+                        <li><i class="fa-solid fa-check"></i> VS Code Ecosystem</li>
+                    </ul>
                 </div>
 
             </div>
